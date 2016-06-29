@@ -1,0 +1,22 @@
+/*
+Theme Name: Josi Ta Josi
+Author: Maca Quevedo
+Description: A Theme specially created for Maca's Blog
+Version: 0.0.1
+Tags: bootstrap
+*/
+
+body{
+  background-color: #FFFFFF;
+  /*background-image: url("img/bg.jpg");
+  background-size: cover;*/
+}
+
+.custom-header{
+  margin: 10px 0 0 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#menu li{
+  float: left;
+}
