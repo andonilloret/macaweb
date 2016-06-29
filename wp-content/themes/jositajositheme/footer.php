@@ -1,5 +1,22 @@
-    <footer class="blog-footer">
-      footer
+    <footer>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 sc-container">
+          <a>
+            <div class="scfb"></div>
+          </a>
+          <a>
+            <div class="scig"></div>
+          </a>
+          <a>
+            <div class="scpi"></div>
+          </a>
+          <a>
+            <div class="sctw"></div>
+          </a>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

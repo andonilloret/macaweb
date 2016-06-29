@@ -12,11 +12,11 @@
     <title><?php echo get_bloginfo( 'name' ); ?></title>
   </head>
   <body>
-    <div class="row custom-header">
+    <header class="row custom-header">
       <div class="col-xs-2">
         <a href="/">AQUI VIENE EL LOGO</a>
       </div>
       <ul id="menu" class="col-xs-10 nav">
         <?php wp_list_pages( '&title_li='); ?>
       </ul>
-    </div>
+    </header>

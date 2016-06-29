@@ -4,19 +4,120 @@ Author: Maca Quevedo
 Description: A Theme specially created for Maca's Blog
 Version: 0.0.1
 Tags: bootstrap
+
+COLORS:
+Light grey D1CBCD
+Dark grey 3D3331
+soft brown DDD5A4
+soft green 61A598
+medium grey E2E5EE
 */
 
+html {
+  height: 100%;
+}
+
 body{
-  background-color: #FFFFFF;
-  /*background-image: url("img/bg.jpg");
-  background-size: cover;*/
+  min-height: 100%;
+  background-color: #E2E5EE;
 }
 
-.custom-header{
-  margin: 10px 0 0 0;
-  background-color: rgba(0, 0, 0, 0.6);
+a{
+  color: #61A598;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
-#menu li{
+/*HEADER*/
+header{
+  background-color: #3D3331;
+}
+header #menu li{
   float: left;
+}
+
+/*FOOTER*/
+footer{
+  background-color: #3D3331;
+}
+footer .sc-container{
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .sc-container div{
+  background-size: cover;
+  display: inline-block;
+  margin: 5px;
+  width: 48px;
+  height: 48px;
+}
+footer .scfb{
+  background-image: url("img/scfb.png");
+}
+footer .scig{
+  background-image: url("img/scig.png");
+}
+footer .scpi{
+  background-image: url("img/scpi.png");
+}
+footer .sctw{
+  background-image: url("img/sctw.png");
+}
+
+/*BLOG POSTS*/
+.blog-post{
+  background-color: #61A598;
+  color: #DDD5A4;
+  margin: 10px;
+}
+.blog-post h2{
+  padding: 10px;
+}
+.blog-post hr{
+  margin-top: -10px;
+  border: none;
+  height: 3px;
+  background-color: #DDD5A4;
+}
+.blog-post .blog-date{
+  float:right;
+  padding: 10px;
+  font-weight: bold;
+}
+.blog-post .blog-content{
+  color: #3D3331;
+  padding: 10px;
+}
+
+/*ROUND IMAGES*/
+.rnd-images{
+  width: 256px;
+  height: 256px;
+}
+.rnd-images .rnd-images-text{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 0pt;
+  color: #3D3331;
+  transition: 0.3s font-size;
+}
+.rnd-images .rnd-images-text:hover{
+  font-size: 45pt;
+}
+.rnd-images .rnd-images-text span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.rnd-bordado{
+  background-image: url("img/rnd_bordado_0.png");
+  transition: 0.5s background-image;
+}
+.rnd-bordado:hover {
+  background-image: url("img/rnd_bordado_1.png");
 }
