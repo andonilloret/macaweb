@@ -1,14 +1,14 @@
     <footer>
-      <div class="row">
+      <div>
         <div class="col-md-4"></div>
         <div class="col-md-4 sc-container">
           <a>
             <div class="scfb"></div>
           </a>
-          <a>
+          <a href="https://www.instagram.com/somosdenda/" target="_blank">
             <div class="scig"></div>
           </a>
-          <a>
+          <a href="https://www.pinterest.com/somosdenda/" target="_blank">
             <div class="scpi"></div>
           </a>
           <a>

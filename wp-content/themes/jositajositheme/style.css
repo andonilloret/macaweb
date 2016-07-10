@@ -4,13 +4,6 @@ Author: Maca Quevedo
 Description: A Theme specially created for Maca's Blog
 Version: 0.0.1
 Tags: bootstrap
-
-COLORS:
-Light grey D1CBCD
-Dark grey 3D3331
-soft brown DDD5A4
-soft green 61A598
-medium grey E2E5EE
 */
 
 html {
@@ -19,22 +12,31 @@ html {
 
 body{
   min-height: 100%;
-  background-color: #E2E5EE;
 }
 
 a{
-  color: #61A598;
+  color: black;
   text-decoration: none !important;
   cursor: pointer;
 }
 
 /*HEADER*/
 header{
-  background-color: #3D3331;
+  background-color: #FEFEFE;
+}
+header div{
+  width: 100%;
+  text-align: center;
 }
 header #menu li{
-  float: left;
+  font-family: 'Satisfy', cursive;
+  display: inline;
+  font-size: 20pt;
 }
+header li a{
+  display: inline-block !important;
+}
+
 
 /*FOOTER*/
 footer{

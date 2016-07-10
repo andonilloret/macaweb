@@ -8,15 +8,18 @@
     <meta name="author" content="">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <?php wp_head(); ?>
     <title><?php echo get_bloginfo( 'name' ); ?></title>
   </head>
   <body>
-    <header class="row custom-header">
-      <div class="col-xs-2">
+    <header>
+      <div class="header-logo-container">
         <a href="/">AQUI VIENE EL LOGO</a>
       </div>
-      <ul id="menu" class="col-xs-10 nav">
-        <?php wp_list_pages( '&title_li='); ?>
-      </ul>
+      <div>
+        <ul id="menu" class="nav">
+          <?php wp_list_pages( '&title_li='); ?>
+        </ul>
+      </div>
     </header>
