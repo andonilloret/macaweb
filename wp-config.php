@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'maca_blog');
+define('DB_NAME', 'maca');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'adminTqfX38f');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root03');
+define('DB_PASSWORD', 'FWcpNtmgM3ZA');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
