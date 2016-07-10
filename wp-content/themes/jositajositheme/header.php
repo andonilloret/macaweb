@@ -15,7 +15,7 @@
   <body>
     <header>
       <div class="header-logo-container">
-        <a href="/">AQUI VIENE EL LOGO</a>
+        <img class="logo" src="<?php bloginfo('template_directory');?>/img/logo.png" alt="Denda"/>
       </div>
       <div>
         <ul id="menu" class="nav">

@@ -18,6 +18,7 @@ a{
   color: black;
   text-decoration: none !important;
   cursor: pointer;
+  transition: 0.5s background-image;
 }
 
 /*HEADER*/
@@ -31,10 +32,17 @@ header div{
 header #menu li{
   font-family: 'Satisfy', cursive;
   display: inline;
-  font-size: 20pt;
 }
 header li a{
   display: inline-block !important;
+  font-size: 20pt;
+}
+header li a:hover {
+  background-color: transparent !important
+}
+header .logo{
+  width: 20%;
+  margin-top: 10px;
 }
 
 

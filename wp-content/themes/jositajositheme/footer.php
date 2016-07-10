@@ -11,9 +11,6 @@
           <a href="https://www.pinterest.com/somosdenda/" target="_blank">
             <div class="scpi"></div>
           </a>
-          <a>
-            <div class="sctw"></div>
-          </a>
         </div>
         <div class="col-md-4"></div>
       </div>
