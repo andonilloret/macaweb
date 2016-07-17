@@ -1212,6 +1212,7 @@ p.demo_store a {
 
 .loginbox .login, .lost_reset_password{
   width: 40%;
+  min-width: 300px;
   margin: auto !important;
 }
 .loginbox h2{
@@ -1679,7 +1680,6 @@ ul.products{
 ul.products li{
   padding: 20px;
   float: left;
-  width: 33%;
 }
 ul.products li img{
   /*width: 100%;*/

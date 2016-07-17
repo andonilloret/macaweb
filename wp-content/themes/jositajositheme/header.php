@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory');?>/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Didact+Gothic" rel="stylesheet">
     <?php wp_head(); ?>
     <title><?php echo get_bloginfo( 'name' ); ?></title>
   </head>
@@ -38,8 +38,16 @@
         </a>
       </div>
       <div class="menu-container">
-        <ul id="menu" class="nav">
-          <?php wp_list_pages( '&title_li='); ?>
-        </ul>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul id="menu" class="nav">
+                <?php wp_list_pages( '&title_li='); ?>
+              </ul>
+            </div>
       </div>
     </header>

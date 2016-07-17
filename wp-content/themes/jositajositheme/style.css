@@ -12,6 +12,7 @@ html {
 
 body{
   min-height: 100%;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 a{
@@ -28,6 +29,15 @@ header .menu-container,.header-logo-container{
   width: 100%;
   text-align: center;
 }
+header .menu-container button{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  border-color: #000;
+}
+header span.icon-bar{
+  background-color: #444;
+}
 header #menu li{
   font-family: 'Amatic SC', cursive;
   font-weight: 700;
@@ -43,15 +53,13 @@ header li a:hover {
 }
 header .logo{
   width: 20%;
+  min-width: 200px;
   margin-top: 30px;
 }
 header .header-right{
   position: absolute;
   top: 30px;
-  right: 70px;
-}
-header span{
-  margin-right: 20px;
+  right: 2%;
 }
 header .cart-count{
   position: absolute;
@@ -59,14 +67,13 @@ header .cart-count{
   margin-left: 12px;
   color: white;
 }
-header .shopping-bag img{
+header .header-right img{
   width: 32px;
 }
 
 
 /*FOOTER*/
 footer{
-  background-color: #3D3331;
 }
 footer .sc-container{
   display: table;
@@ -96,8 +103,6 @@ footer .sctw{
 
 /*BLOG POSTS*/
 .blog-post{
-  background-color: #61A598;
-  color: #DDD5A4;
   margin: 10px;
 }
 .blog-post h2{
@@ -107,7 +112,6 @@ footer .sctw{
   margin-top: -10px;
   border: none;
   height: 3px;
-  background-color: #DDD5A4;
 }
 .blog-post .blog-date{
   float:right;
@@ -115,6 +119,5 @@ footer .sctw{
   font-weight: bold;
 }
 .blog-post .blog-content{
-  color: #3D3331;
   padding: 10px;
 }
