@@ -23,9 +23,8 @@ a{
 
 /*HEADER*/
 header{
-  background-color: #FEFEFE;
 }
-header div{
+header .menu-container,.header-logo-container{
   width: 100%;
   text-align: center;
 }
@@ -45,6 +44,23 @@ header li a:hover {
 header .logo{
   width: 20%;
   margin-top: 30px;
+}
+header .header-right{
+  position: absolute;
+  top: 30px;
+  right: 70px;
+}
+header span{
+  margin-right: 20px;
+}
+header .cart-count{
+  position: absolute;
+  top: 12px;
+  margin-left: 12px;
+  color: white;
+}
+header .shopping-bag img{
+  width: 32px;
 }
 
 
@@ -101,35 +117,4 @@ footer .sctw{
 .blog-post .blog-content{
   color: #3D3331;
   padding: 10px;
-}
-
-/*ROUND IMAGES*/
-.rnd-images{
-  width: 256px;
-  height: 256px;
-}
-.rnd-images .rnd-images-text{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 0pt;
-  color: #3D3331;
-  transition: 0.3s font-size;
-}
-.rnd-images .rnd-images-text:hover{
-  font-size: 45pt;
-}
-.rnd-images .rnd-images-text span{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.rnd-bordado{
-  background-image: url("img/rnd_bordado_0.png");
-  transition: 0.5s background-image;
-}
-.rnd-bordado:hover {
-  background-image: url("img/rnd_bordado_1.png");
 }

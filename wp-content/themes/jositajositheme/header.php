@@ -1,3 +1,6 @@
+<?php
+  $current_user = wp_get_current_user();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,9 +18,26 @@
   <body>
     <header>
       <div class="header-logo-container">
-        <img class="logo" src="<?php bloginfo('template_directory');?>/img/logo.png" alt="Denda"/>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+          <img class="logo" src="<?php bloginfo('template_directory');?>/img/logo.png" alt="Denda"/>
+        </a>
       </div>
-      <div>
+      <div class="header-right">
+        <span>
+        <?php
+          if ( 0 == $current_user->ID ){
+            echo "<a href=\"/index.php/my-account\">Iniciar Sesión</a>";
+          }else{
+            echo "Hola, <a href=\"/index.php/my-account\">".$current_user->user_login."</a>";
+          }
+        ?>
+        </span>
+        <a class="shopping-bag" href="/index.php/cart">
+          <span class="cart-count"><?php echo WC()->cart->get_cart_contents_count() ?></span>
+          <img src="<?php bloginfo('template_directory');?>/img/shopping-bag.svg" alt="My Shopping Bag"/>
+        </a>
+      </div>
+      <div class="menu-container">
         <ul id="menu" class="nav">
           <?php wp_list_pages( '&title_li='); ?>
         </ul>
