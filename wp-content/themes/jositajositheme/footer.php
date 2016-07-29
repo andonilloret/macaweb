@@ -1,23 +1,23 @@
     <footer>
-      <div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4 sc-container">
-          <a>
-            <div class="scfb"></div>
+      <div class="container">
+        <div class="col-md-3">
+          macarena quevedo </br>
+          andoni lloret </br></br>
+          info@somosdenda.cl
+        </div>
+        <div class="col-md-9">
+          <a href="//www.facebook.com/somosdenda" target="_blank">
+            <img class="footer-social-logo" src="<?php bloginfo('template_directory');?>/img/scfb.png" alt="Denda"/>
           </a>
-          <a href="https://www.instagram.com/somosdenda/" target="_blank">
-            <div class="scig"></div>
+          <a href="//www.pinterest.com/somosdenda" target="_blank">
+            <img class="footer-social-logo" src="<?php bloginfo('template_directory');?>/img/scpi.png" alt="Denda"/>
           </a>
-          <a href="https://www.pinterest.com/somosdenda/" target="_blank">
-            <div class="scpi"></div>
+          <a href="//www.instagram.com/somosdenda" target="_blank">
+            <img class="footer-social-logo" src="<?php bloginfo('template_directory');?>/img/scig.png" alt="Denda"/>
           </a>
         </div>
-        <div class="col-md-4"></div>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>$("#container").addClass("container");</script>
     <?php wp_footer(); ?>
   </body>
 </html>

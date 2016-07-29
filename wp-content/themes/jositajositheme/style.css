@@ -6,6 +6,11 @@ Version: 0.0.1
 Tags: bootstrap
 */
 
+@font-face {
+  font-family: TheMix;
+  src: url("./fonts/themix.otf") format("opentype");
+}
+
 html {
   height: 100%;
 }
@@ -13,6 +18,7 @@ html {
 body{
   min-height: 100%;
   font-family: 'Didact Gothic', sans-serif;
+  overflow-x: hidden;
 }
 
 a{
@@ -24,8 +30,15 @@ a{
 
 /*HEADER*/
 header{
+  background-size: 32px 32px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
 }
-header .menu-container,.header-logo-container{
+header .menu-container{
+  margin-top: 50px;
+  background-color: #222;
+  height: 40px;
+}
+header .menu-container, .header-logo-container{
   width: 100%;
   text-align: center;
 }
@@ -39,13 +52,16 @@ header span.icon-bar{
   background-color: #444;
 }
 header #menu li{
-  font-family: 'Amatic SC', cursive;
-  font-weight: 700;
+  font-family: 'TheMix';
   display: inline;
+}
+header a{
+  color: white;
 }
 header li a{
   display: inline-block !important;
-  font-size: 23pt;
+  font-size: 17pt;
+  padding: 5px 65px !important;
 }
 header li a:hover {
   color: #d24a7e !important;
@@ -54,7 +70,7 @@ header li a:hover {
 header .logo{
   width: 20%;
   min-width: 200px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 header .header-right{
   position: absolute;
@@ -71,39 +87,28 @@ header .header-right img{
   width: 32px;
 }
 
-
 /*FOOTER*/
 footer{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #222;
+  font-family: 'TheMix';
+  color: white;
 }
-footer .sc-container{
-  display: table;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-footer .sc-container div{
-  background-size: cover;
-  display: inline-block;
-  margin: 5px;
+footer .footer-social-logo{
+  float: right;
+  margin: 20px;
   width: 48px;
-  height: 48px;
-}
-footer .scfb{
-  background-image: url("img/scfb.png");
-}
-footer .scig{
-  background-image: url("img/scig.png");
-}
-footer .scpi{
-  background-image: url("img/scpi.png");
-}
-footer .sctw{
-  background-image: url("img/sctw.png");
 }
 
 /*BLOG POSTS*/
 .blog-post{
   margin: 10px;
+  background-color: #eee;
+}
+.blog-post .post-heading{
+  color: #fff;
+  background-color: #222;
 }
 .blog-post h2{
   padding: 10px;
@@ -120,4 +125,21 @@ footer .sctw{
 }
 .blog-post .blog-content{
   padding: 10px;
+}
+
+/*HOME PAGE*/
+.caroussel{
+  width: 100%;
+}
+.caroussel .caroussel-image img{
+  width: 100%;
+}
+
+.caroussel .caroussel-image .caroussel-info{
+  height: 100%;
+  width: 7%;
+  font-size: 4vw;
+  padding: 20px;
+  position: absolute;
+  background-color: rgba(255,255,255,0.6);
 }
